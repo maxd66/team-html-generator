@@ -21,11 +21,18 @@ describe('Employee', () => {
             expect(employee).toMatchObject(expected);
         })
         it('when getName is called, method returns name of associated oject', () => {
-            const employee = new Employee('Rick', 25, 'sony@playstation.com')
+            const employee = new Employee('Rick', 25, 'sony@playstation.com');
 
             const empName = employee.getName();
 
             expect(empName).toEqual('Rick');  
+        })
+        it('when getId is called, returns objects ID number', () => {
+            const employee = new Employee('Morty', 3, 'sony@playstation.com');
+
+            const empId = employee.getId();
+
+            expect(empId).toEqual(3);
         })
     })
 })
