@@ -9,4 +9,11 @@ describe('Manager', () => {
             expect(manager).toHaveProperty('officeNumber', 6598)
         })
     })
+    describe('role manager', () => {
+        it('when getRole is called in Manager object, it returns manager', () => {
+            const manager = new Manager('Tim Drake', 3, 'iFiguredItOut@whoIsBatman.com', 12);
+
+            expect(manager.getRole()).toEqual('Manager');
+        }) 
+    })
 })
