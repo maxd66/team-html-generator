@@ -39,5 +39,10 @@ describe('Employee', () => {
 
             expect(employee.getEmail()).toEqual('sony@playstation.com');
         })
+        it('when getRole is called, returns objects Role, employee for employee object', () => {
+            const employee = new Employee('Dick Grayson', 1, 'sony@playstation.com');
+
+            expect(employee.getRole()).toEqual('Employee');
+        })
     })
 })
