@@ -1,0 +1,26 @@
+{
+  "name": "team-html-generator",
+  "version": "1.0.0",
+  "description": "This is a node program that will take user input to create a responsive html display of information about different members of a team.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxd66/team-html-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxd66/team-html-generator/issues"
+  },
+  "homepage": "https://github.com/maxd66/team-html-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.1",
+    "jest": "^27.0.6"
+  }
+}
