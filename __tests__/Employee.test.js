@@ -1,6 +1,6 @@
 // const { it } = require('@jest/globals');
 // const { describe } = require('yargs');
-const { it, expect } = require('@jest/globals');
+const { it, expect, describe } = require('@jest/globals');
 const Employee = require('../lib/Employee');
 
 describe('Employee', () => {
@@ -20,28 +20,31 @@ describe('Employee', () => {
             // expectation
             expect(employee).toMatchObject(expected);
         })
+    })
+    describe('Employee methods', () => {
+
         it('when getName is called, method returns name of associated oject', () => {
             const employee = new Employee('Rick', 25, 'sony@playstation.com');
-
+            
             const empName = employee.getName();
-
+            
             expect(empName).toEqual('Rick');  
         })
         it('when getId is called, returns objects ID number', () => {
             const employee = new Employee('Morty', 3, 'sony@playstation.com');
-
+            
             const empId = employee.getId();
-
+            
             expect(empId).toEqual(3);
         })
         it('when getEmail is called, returns objects Email', () => {
             const employee = new Employee('Dark Knight', 81, 'sony@playstation.com');
-
+            
             expect(employee.getEmail()).toEqual('sony@playstation.com');
         })
         it('when getRole is called, returns objects Role, employee for employee object', () => {
             const employee = new Employee('Dick Grayson', 1, 'sony@playstation.com');
-
+            
             expect(employee.getRole()).toEqual('Employee');
         })
     })
