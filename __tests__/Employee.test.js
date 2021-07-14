@@ -1,5 +1,3 @@
-// const { it } = require('@jest/globals');
-// const { describe } = require('yargs');
 const { it, expect, describe } = require('@jest/globals');
 const Employee = require('../lib/Employee');
 
